@@ -45,7 +45,7 @@ pipeline {
                     def uploadSpec = """{
                         "files": [{
                             "pattern": "target/microservice-one.war",
-                            "target": "tech-snapshots/com/techworldwithmurali/microservice-one/1.0-SNAPSHOT/"
+                            "target": "tech-snapshots/com/kaeliq/microservice-one/1.0-SNAPSHOT/"
                         }]
                     }"""
 
