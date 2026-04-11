@@ -16,6 +16,16 @@
     </dependency>
   </dependencies>
   <build>
+    <distributionManagement>
+    <snapshotRepository>
+        <id>jfrog-snapshots</id>
+        <url>https://trial3wxr3b.jfrog.io/artifactory/tech-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+        <id>jfrog-releases</id>
+        <url>https://trial3wxr3b.jfrog.io/artifactory/tech-releases/</url>
+    </repository>
+</distributionManagement>
     <finalName>microservice-one</finalName>
   </build>
 </project>
