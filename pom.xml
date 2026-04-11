@@ -1,5 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+  http://maven.apache.org/maven-v4_0_0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.techworldwithmurali</groupId>
   <artifactId>microservice-one</artifactId>
@@ -7,6 +10,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>microservice-one</name>
   <url>http://maven.apache.org</url>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,17 +19,20 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
-    <distributionManagement>
+
+  <distributionManagement>
     <snapshotRepository>
-        <id>jfrog-snapshots</id>
-        <url>https://trial3wxr3b.jfrog.io/artifactory/tech-snapshots/</url>
+      <id>jfrog-snapshots</id>
+      <url>https://trial3wxr3b.jfrog.io/artifactory/tech-snapshots/</url>
     </snapshotRepository>
     <repository>
-        <id>jfrog-releases</id>
-        <url>https://trial3wxr3b.jfrog.io/artifactory/tech-releases/</url>
+      <id>jfrog-releases</id>
+      <url>https://trial3wxr3b.jfrog.io/artifactory/tech-releases/</url>
     </repository>
-</distributionManagement>
+  </distributionManagement>
+
+  <build>
     <finalName>microservice-one</finalName>
   </build>
+
 </project>
