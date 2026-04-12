@@ -1,0 +1,33 @@
+# Java
+target/
+*.class
+*.jar
+*.war
+.idea/
+*.iml
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+.npm
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.pytest_cache/
+*.egg-info/
+reports/
+
+# Docker
+.docker/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

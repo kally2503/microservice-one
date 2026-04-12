@@ -1,0 +1,46 @@
+services:
+
+  java-service:
+    build: ./services/java-service
+    container_name: java-service
+    ports:
+      - "8081:8081"
+    environment:
+      - BUILD_NUMBER=${BUILD_NUMBER:-local}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8081/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - microservices
+
+  python-service:
+    build: ./services/python-service
+    container_name: python-service
+    ports:
+      - "5000:5000"
+    environment:
+      - BUILD_NUMBER=${BUILD_NUMBER:-local}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - microservices
+
+  angular-app:
+    build: ./services/angular-app
+    container_name: angular-app
+    ports:
+      - "4200:4200"
+    depends_on:
+      - java-service
+      - python-service
+    networks:
+      - microservices
+
+networks:
+  microservices:
+    driver: bridge

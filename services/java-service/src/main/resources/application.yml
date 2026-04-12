@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+app:
+  version: 1.0-SNAPSHOT
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
