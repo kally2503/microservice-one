@@ -8,6 +8,7 @@ pipeline {
     }
 
     environment {
+        CHROME_BIN        = '/usr/bin/google-chrome'
         JFROG_URL        = 'https://trial3wxr3b.jfrog.io/artifactory'
         JFROG_CRED_ID    = 'jfrog-api-token'
         GITHUB_CRED_ID   = 'Github_credentails'
