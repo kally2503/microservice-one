@@ -56,7 +56,7 @@ pipeline {
                 stage('Build - Angular App') {
                     steps {
                         dir('services/angular-app') {
-                            sh 'npm ci'
+                            sh 'npm install'
                             sh 'npm run build'
                         }
                     }
