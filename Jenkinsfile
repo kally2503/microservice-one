@@ -175,11 +175,11 @@ pipeline {
                             },
                             {
                                 "pattern": "services/angular-app/angular-app-${BUILD_NUMBER}.tar.gz",
-                                "target": "${SNAPSHOT_REPO}/com/kaeliq/angular-app/${BUILD_NUMBER}/"
+                                "target": "tech-generic/com/kaeliq/angular-app/${BUILD_NUMBER}/"
                             },
                             {
                                 "pattern": "services/python-service/python-service-${BUILD_NUMBER}.tar.gz",
-                                "target": "${SNAPSHOT_REPO}/com/kaeliq/python-service/${BUILD_NUMBER}/"
+                                "target": "tech-generic/com/kaeliq/python-service/${BUILD_NUMBER}/"
                             }
                         ]
                     }"""
